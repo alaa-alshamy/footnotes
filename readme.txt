@@ -5,7 +5,7 @@ Tags: footnote, footnotes, bibliography, formatting, notes, Post, posts, referen
 Requires at least: 3.9
 Tested up to: 5.7.1
 Requires PHP: 7.0
-Stable Tag: 2.7.3
+Stable Tag: 2.7.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -59,6 +59,11 @@ No, this Plugin has been written from scratch. Of course some inspirations on ho
 7. Here you can see the **footnotes** Plugin at work.
 
 == Changelog ==
+
+= 2.7.4 =
+
+- feat: add composer.json file.
+- feat: make the default value of hard link option is true.
 
 = 2.7.3 =
 

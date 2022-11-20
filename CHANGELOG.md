@@ -1,5 +1,10 @@
 # Changelog
 
+= 2.7.4 =
+
+- feat: added composer.json file.
+- feat: made the default value of hard link option is true.
+
 = 2.7.3 =
 
 - Bugfix: fix WYSIWYG editor error message, thanks to @ogbcashdown bug report.

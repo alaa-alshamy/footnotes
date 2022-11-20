@@ -1,0 +1,13 @@
+{
+  "name": "markcheret/footnotes",
+  "description": "footnotes lets you easily add highly-customisable footnotes on your WordPress Pages and Posts.",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-only",
+  "version": "2.7.4",
+  "authors": [
+    {
+      "name": "Built By Mark Cheret",
+      "homepage": "https://github.com/markcheret/footnotes"
+    }
+  ]
+}

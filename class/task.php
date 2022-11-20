@@ -179,7 +179,7 @@ class Footnotes_Task {
 	 * @var bool
 	 * A property because used both in search() and reference_container().
 	 */
-	public static $a_bool_hard_links_enabled = false;
+	public static $a_bool_hard_links_enabled = true;
 
 	/**
 	 * The referrer slug.
