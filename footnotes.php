@@ -5,7 +5,7 @@
  * Description: footnotes lets you easily add highly-customisable footnotes on your WordPress Pages and Posts.
  * Author: Mark Cheret
  * Author URI: https://cheret.org/footnotes
- * Version: 2.7.4
+ * Version: 2.7.5
  * Text Domain: footnotes
  * Domain Path: /languages
  * Requires at least: 3.9
@@ -25,7 +25,7 @@
  * @since 2.5.3 (Hungarian)
  * @var str
  */
-define( 'C_STR_FOOTNOTES_VERSION', '2.7.4' );
+define( 'C_STR_FOOTNOTES_VERSION', '2.7.5' );
 
 /**
  * Defines the current environment ('development' or 'production').
@@ -114,6 +114,7 @@ $l_str_plugin_file = 'footnotes/footnotes.php';
 add_filter( "plugin_action_links_{$l_str_plugin_file}", array( 'Footnotes_Hooks', 'get_plugin_links' ), 10, 2 );
 
 // Initialize the Plugin.
+global $g_obj_mci_footnotes;
 $g_obj_mci_footnotes = new Footnotes();
 // Run the Plugin.
 $g_obj_mci_footnotes->run();

@@ -1,5 +1,9 @@
 # Changelog
 
+= 2.7.5 =
+
+- feat: explicitly global the plugin main class to can be used in wp-cli context
+
 = 2.7.4 =
 
 - feat: added composer.json file.
