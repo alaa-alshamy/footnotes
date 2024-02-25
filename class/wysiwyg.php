@@ -29,7 +29,7 @@ class Footnotes_WYSIWYG {
 	 */
 	public static function register_hooks() {
 		add_filter( 'mce_buttons', array( 'Footnotes_WYSIWYG', 'new_visual_editor_button' ) );
-		add_action( 'admin_print_footer_scripts', array( 'Footnotes_WYSIWYG', 'new_plain_text_editor_button' ) );
+		add_action( 'admin_print_footer_scripts', array( 'Footnotes_WYSIWYG', 'new_plain_text_editor_button' ), 100 );
 
 		add_filter( 'mce_external_plugins', array( 'Footnotes_WYSIWYG', 'include_scripts' ) );
 

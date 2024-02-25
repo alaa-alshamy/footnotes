@@ -1,5 +1,9 @@
 # Changelog
 
+= 2.7.6 =
+
+- fix: fix "Uncaught ReferenceError: QTags is not defined" Error
+
 = 2.7.5 =
 
 - feat: explicitly global the plugin main class to can be used in wp-cli context
