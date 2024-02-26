@@ -60,6 +60,10 @@ class Footnotes_WYSIWYG {
 	 * @since 1.5.0
 	 */
 	public static function new_plain_text_editor_button() {
+		if ( ! wp_script_is( 'quicktags' ) ) {
+			return;
+		}
+
 		$l_obj_template = new Footnotes_Template( Footnotes_Template::C_STR_DASHBOARD, 'editor-button' );
 		// phpcs:disable WordPress.Security.EscapeOutput.OutputNotEscaped
 		echo $l_obj_template->get_content();
