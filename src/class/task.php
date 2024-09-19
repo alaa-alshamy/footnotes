@@ -2792,8 +2792,14 @@ class Footnotes_Task {
 		 * Themes may drop-cap a first letter of initial paragraphs, like this label.
 		 * In case of empty label that would apply to the left half button character.
 		 * Hence the point in setting an empty label to U+202F NARROW NO-BREAK SPACE.
+		 * 
+		 * @since 2.7.7
+		 * The label is now retrieved using the get_footnote_heading() method, which allows
+		 * for dynamic customization and easier integration with translation plugins.
+		 * This method applies the 'footnotes_heading' filter, enabling developers to modify
+		 * the heading programmatically.
 		 */
-		$l_str_reference_container_label = Footnotes_Settings::instance()->get( Footnotes_Settings::C_STR_REFERENCE_CONTAINER_NAME );
+		$l_str_reference_container_label = Footnotes_Settings::instance()->get_footnote_heading();
 
 		// Select the reference container template.
 		// Whether AMP compatibility mode is enabled.
@@ -2855,7 +2861,7 @@ class Footnotes_Task {
 				'name'                 => empty( $l_str_reference_container_label ) ? '&#x202F;' : $l_str_reference_container_label,
 				'button-style'         => ! $l_bool_collapse_default ? 'display: none;' : '',
 				'style'                => $l_bool_collapse_default ? 'display: none;' : '',
-				'caption'              => ( empty( $l_str_reference_container_label ) || ' ' === $l_str_reference_container_label ) ? 'References' : $l_str_reference_container_label,
+				'caption'              => ( empty( $l_str_reference_container_label ) || ' ' === $l_str_reference_container_label ) ? __( 'References', 'footnotes') : $l_str_reference_container_label,
 				'content'              => $l_str_body,
 				'scroll-offset'        => $l_int_scroll_offset,
 				'scroll-down-delay'    => $l_int_scroll_down_delay,
