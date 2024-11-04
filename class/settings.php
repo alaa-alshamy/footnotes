@@ -1554,6 +1554,29 @@ class Footnotes_Settings {
 		return array_key_exists( $p_str_key, $this->a_arr_settings ) ? $this->a_arr_settings[ $p_str_key ] : null;
 	}
 
+    /**
+     * Retrieves the footnote heading with optional filtering.
+     *
+     * This function gets the default heading from the plugin settings and
+     * applies a filter, allowing for customization of the heading text.
+     *
+     * @since 2.7.7
+     *
+     * @return string The footnote heading, potentially modified by filters.
+     */
+    public function get_footnote_heading() {
+        $default_heading = self::instance()->get( self::C_STR_REFERENCE_CONTAINER_NAME );
+
+        /**
+         * Filter the footnote heading.
+         *
+         * @since 2.7.7
+         *
+         * @param string $default_heading The default footnote heading from settings.
+         */
+        return apply_filters( 'mci_footnotes_heading', $default_heading );
+    }
+
 	/**
 	 * Deletes each Settings Container and loads the default values for each Settings Container.
 	 *

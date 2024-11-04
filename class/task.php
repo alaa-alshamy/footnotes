@@ -2793,7 +2793,7 @@ class Footnotes_Task {
 		 * In case of empty label that would apply to the left half button character.
 		 * Hence the point in setting an empty label to U+202F NARROW NO-BREAK SPACE.
 		 */
-		$l_str_reference_container_label = Footnotes_Settings::instance()->get( Footnotes_Settings::C_STR_REFERENCE_CONTAINER_NAME );
+		$l_str_reference_container_label = Footnotes_Settings::instance()->get_footnote_heading();
 
 		// Select the reference container template.
 		// Whether AMP compatibility mode is enabled.

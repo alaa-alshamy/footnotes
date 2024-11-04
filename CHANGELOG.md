@@ -1,5 +1,9 @@
 # Changelog
 
+= 2.7.7 =
+
+- feat: add a new filter to allow customization of the heading text.
+
 = 2.7.6 =
 
 - fix: fix "Uncaught ReferenceError: QTags is not defined" Error
