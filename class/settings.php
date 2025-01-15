@@ -1611,4 +1611,27 @@ class Footnotes_Settings {
 			register_setting( $this->get_container( $i ), $this->get_container( $i ) );
 		}
 	}
+
+	/**
+     * Retrieves the footnote heading fallback with optional filtering.
+     *
+     * This function gets the default heading from the plugin settings and
+     * applies a filter, allowing for customization of the heading fallback text.
+     *
+     * @since 2.7.7
+     *
+     * @return string The footnote heading fallback, potentially modified by filters.
+     */
+	public function get_footnote_fallback_heading() {
+        $default_heading = self::instance()->get( self::C_STR_REFERENCE_CONTAINER_NAME );
+
+        /**
+         * Filter the footnote heading fallback.
+         *
+         * @since 2.7.7
+         *
+         * @param string $default_heading The default footnote heading from settings.
+         */
+        return apply_filters( 'mci_fallback_footnotes_heading', $default_heading );
+    }
 }

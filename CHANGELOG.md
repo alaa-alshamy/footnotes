@@ -1,5 +1,9 @@
 # Changelog
 
+= 2.7.8 =
+
+- feat: add a new filter to allow customization of the heading fallback text.
+
 = 2.7.7 =
 
 - feat: add a new filter to allow customization of the heading text.
@@ -32,7 +36,7 @@
 - Dashboard: move Plugin settings under default WP Settings menu.
 - Bugfix: Footnotes: fix bug when using multiple paragraphs in footnotes.
 - Documentation: remove outdated MCI/ManFisher references.
-- Documentation: split changelog into seperate file.  
+- Documentation: split changelog into seperate file.
 
 = 2.7.0 =
 
@@ -752,7 +756,7 @@
 
 = 1.6.4 =
 
-- Update: replace deprecated function WP_Widget() with recommended __construct(),
+- Update: replace deprecated function WP_Widget() with recommended \_\_construct(),
   thanks to @dartiss code contribution.
 - Bugfix: Fixed occasional bug where footnote ordering could be out of
   sequence

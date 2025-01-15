@@ -2847,6 +2847,8 @@ class Footnotes_Task {
 
 		}
 
+		$l_str_reference_container_fallback_label = Footnotes_Settings::instance()->get_footnote_fallback_heading();
+
 		$l_obj_template_container->replace(
 			array(
 				'post_id'              => self::$a_int_post_id,
@@ -2855,7 +2857,7 @@ class Footnotes_Task {
 				'name'                 => empty( $l_str_reference_container_label ) ? '&#x202F;' : $l_str_reference_container_label,
 				'button-style'         => ! $l_bool_collapse_default ? 'display: none;' : '',
 				'style'                => $l_bool_collapse_default ? 'display: none;' : '',
-				'caption'              => ( empty( $l_str_reference_container_label ) || ' ' === $l_str_reference_container_label ) ? 'References' : $l_str_reference_container_label,
+				'caption'              => ( empty( $l_str_reference_container_label ) || ' ' === $l_str_reference_container_label ) ? $l_str_reference_container_fallback_label : $l_str_reference_container_label,
 				'content'              => $l_str_body,
 				'scroll-offset'        => $l_int_scroll_offset,
 				'scroll-down-delay'    => $l_int_scroll_down_delay,
