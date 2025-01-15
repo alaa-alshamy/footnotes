@@ -756,7 +756,7 @@
 
 = 1.6.4 =
 
-- Update: replace deprecated function WP_Widget() with recommended \_\_construct(),
+- Update: replace deprecated function WP_Widget() with recommended __construct(),
   thanks to @dartiss code contribution.
 - Bugfix: Fixed occasional bug where footnote ordering could be out of
   sequence
