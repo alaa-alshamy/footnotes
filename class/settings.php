@@ -1622,7 +1622,7 @@ class Footnotes_Settings {
      *
      * @return string The footnote heading, potentially modified by filters.
      */
-     public function get_footnote_fallback_heading() {
+    public function get_footnote_fallback_heading() {
         $default_heading = self::instance()->get( self::C_STR_REFERENCE_CONTAINER_NAME );
 
         /**
